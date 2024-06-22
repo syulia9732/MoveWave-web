@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+    <meta name="theme-color" content="#190c64">
+    <title>MoodWave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="bg-overlay display-none"></div>
+    
+    <header>
+      <div id="mobileLinks" class="menu-out display-none">
+          <a href="who.html"><h5>Who are we?</h5></a>
+          <a href="about.html"><h5>About this project</h5></a>
+      </div>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="index.html">
+                          <img src="images/logo.png">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="index.html">
+                          <h4>MoodWave</h4>
+                      </a>
+                  </li>
+              </ul>
+              
+              <ul id="pcLinks">
+                  <li>
+                      <a href="who.html"><h5>Who are we?</h5></a>
+                  </li>
+                  <li>
+                      <a href="about.html"><h5>About this project</h5></a>
+                  </li>
+              </ul>
+              
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <div class="hamburger-menu">
+                      <div class="ham-bar bar-top"></div>
+                      <div class="ham-bar bar-mid"></div>
+                      <div class="ham-bar bar-bottom"></div>
+                  </div>
+              </a>
+          </nav>
+    </header>
+
+   
+
+    <form action="">
+      <div class="welcome">
+        <div class = "wrapper">
+          <div class = "cards">
+            <!-- single card -->
+            <div class = "card">
+              <div class = "slide-wrapper">
+                <div class = "card-slide slide-one">
+                  <div class = "card-title">
+                    <h1>Welcome</h1>
+                    <h2>I recommand songs!</h2>
+                  </div>
+                  <button type = "button" class = "btn btn-right-one">
+                    START
+                  </button>
+                </div>
+
+                <div class = "card-slide slide-two">
+                  <h2>Pick a color!</h2>
+                  <p>Which color best represents your mood right now?</p>
+                  <div class="colors">
+
+                    <input type="radio" id="col-ho2" name="color-group" value="#f8ff6e">
+                    <label for="col-ho2" class="color-block" style="background-color: #f8ff6e;"></label> <!-- hopeful2 -->
+
+                    <input type="radio" id="col-pr1" name="color-group" value="#ffe100">
+                    <label for="col-pr1" class="color-block" style="background-color: #ffe100;"></label> <!-- proud1 -->
+
+                    <input type="radio" id="col-sa1" name="color-group" value="#c9c9c9">
+                    <label for="col-sa1" class="color-block" style="background-color: #c9c9c9;"></label> <!-- sad1 -->
+
+                    <input type="radio" id="col-sa2" name="color-group" value="#abafbd">
+                    <label for="col-sa2" class="color-block" style="background-color: #abafbd;"></label> <!-- sad2 -->
+
+                    <input type="radio" id="col-be1" name="color-group" value="#ef9e9e">
+                    <label for="col-be1" class="color-block" style="background-color: #ef9e9e;"></label><!-- beautiful1 -->
+
+                    <input type="radio" id="col-jo1" name="color-group" value="#ee6492">
+                    <label for="col-jo1" class="color-block" style="background-color: #ee6492;"></label> <!-- joyful1 -->
+
+                    <input type="radio" id="col-er1" name="color-group" value="#ff1900">
+                    <label for="col-er1" class="color-block" style="background-color: #ff1900;"></label> <!-- erotic1 -->
+
+                    <input type="radio" id="col-an1" name="color-group" value="#a10202">
+                    <label for="col-an1" class="color-block" style="background-color: #a10202;"></label> <!-- anger1 -->
+
+                    <input type="radio" id="col-pe1" name="color-group" value="#aed4a3">
+                    <label for="col-pe1" class="color-block" style="background-color: #aed4a3;"></label> <!-- peaceful1 -->
+
+                    <input type="radio" id="col-pe2" name="color-group" value="#67b365">
+                    <label for="col-pe2" class="color-block" style="background-color: #67b365;"></label> <!-- peaceful2 -->
+
+                    <input type="radio" id="col-pr2" name="color-group" value="#40ff00">
+                    <label for="col-pr2" class="color-block" style="background-color: #40ff00;"></label> <!-- proud2 -->
+
+                    <input type="radio" id="col-sa3" name="color-group" value="#a0b3a2">
+                    <label for="col-sa3" class="color-block" style="background-color: #415544;"></label> <!-- sad3 -->
+
+                    <input type="radio" id="col-ho1" name="color-group" value="#beebea">
+                    <label for="col-ho1" class="color-block" style="background-color: #beebea;"></label> <!-- hopeful1 -->
+
+                    <input type="radio" id="col-jo2" name="color-group" value="#83b4ff">
+                    <label for="col-jo2" class="color-block" style="background-color: #83b4ff;"></label> <!-- joyful2 -->
+
+                    <input type="radio" id="col-en1" name="color-group" value="#0588f6">
+                    <label for="col-en1" class="color-block" style="background-color: #0588f6;"></label> <!-- energetic1 -->
+
+                    <input type="radio" id="col-sa4" name="color-group" value="#ef9e9e">
+                    <label for="col-sa4" class="color-block" style="background-color: #10196e;"></label><!-- sad4 -->
+
+                    <input type="radio" id="col-be2" name="color-group" value="#d8b7e8">
+                    <label for="col-be2" class="color-block" style="background-color: #d8b7e8;"></label><!-- beautiful2 -->
+
+                    <input type="radio" id="col-mo2" name="color-group" value="#a244ff">
+                    <label for="col-mo2" class="color-block" style="background-color: #a244ff;"></label> <!-- motivated2 -->
+
+                    <input type="radio" id="col-er2" name="color-group" value="#d904ff">
+                    <label for="col-er2" class="color-block" style="background-color: #d904ff;"></label> <!-- erotic2 -->
+                    
+                    <input type="radio" id="col-an2" name="color-group" value="#000000">
+                    <label for="col-an2" class="color-block" style="background-color: #000000;"></label> <!-- anger2 -->
+
+                    <input type="radio" id="col-mo1" name="color-group" value="#fc9b52">
+                    <label for="col-mo1" class="color-block" style="background-color: #fc9b52;"></label> <!-- motivated1 -->
+
+                    <input type="radio" id="col-en2" name="color-group" value="#fb6d00">
+                    <label for="col-en2" class="color-block" style="background-color: #fb6d00;"></label> <!-- energetic2 -->
+
+                    <input type="radio" id="col-ann1" name="color-group" value="#7b2d02">
+                    <label for="col-ann1" class="color-block" style="background-color: #7b2d02;"></label> <!-- annoyed1 -->
+
+                    <input type="radio" id="col-ann2" name="color-group" value="#4b3c35">
+                    <label for="col-ann2" class="color-block" style="background-color: #4b3c35;"></label> <!-- annoyed2 --> 
+                  </div>
+                  <button type = "button" class = "btn btn-right-two">
+                    NEXT
+                  </button>
+                </div>
+
+                <div class = "card-slide slide-three">
+                  <button type = "button" class = "btn btn-left">
+                    SUBMIT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="gradient-bg">
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

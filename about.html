@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+    <meta name="theme-color" content="#190c64">
+    <title>MoodWave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="bg-overlay display-none"></div>
+    
+    <header>
+        <div id="mobileLinks" class="menu-out display-none">
+            <a href="who.html"><h5>Who are we?</h5></a>
+            <a href="about.html"><h5>About this project</h5></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <h4>MoodWave</h4>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul id="pcLinks">
+                <li>
+                    <a href="who.html"><h5>Who are we?</h5></a>
+                </li>
+                <li>
+                    <a href="about.html"><h5>About this project</h5></a>
+                </li>
+            </ul>
+            
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="hamburger-menu">
+                    <div class="ham-bar bar-top"></div>
+                    <div class="ham-bar bar-mid"></div>
+                    <div class="ham-bar bar-bottom"></div>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    
+
+
+    <div class="who-gradient-bg">
+        <h1>About this project</h1>
+        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
